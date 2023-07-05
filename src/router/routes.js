@@ -4,7 +4,7 @@ const routes = [
     component: () => import('layouts/MainLayout.vue'),
     children: [
       { path: '', component: () => import('pages/IndexPage.vue') },
-      { path: '/detalhar', name: 'detalhar', component: () => import('pages/DetalharPage.vue'), props: true }
+      { path: '/detalhar', name: 'detalhar', component: () => import('pages/DetalharPage.vue'), props: (route) => ({ texto: route.query.texto }) }
     ]
   },
 

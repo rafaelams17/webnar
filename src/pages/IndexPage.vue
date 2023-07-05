@@ -35,7 +35,7 @@ export default defineComponent({
     ...mapActions('Posts', ['setPosts']),
     // eslint-disable-next-line space-before-function-paren
     detalhar(conteudo) {
-      this.$router.push({ name: 'detalhar', params: { texto: conteudo } })
+      this.$router.push({ name: 'detalhar', query: { texto: conteudo } })
     }
   }
 })
