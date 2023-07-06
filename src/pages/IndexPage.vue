@@ -1,5 +1,7 @@
 <template>
   <q-page class="container">
+    <p class="text-h3 text-center q-mt-md">Aplicação multiplataforma com Quasar Framework</p>
+
     <div class="row q-pa-md q-col-gutter-md">
       <div class="col-md-3 col-sm-4" v-for="(post, index) in posts" :key="index">
         <q-card class="my-card" style="min-height: 23rem;">
